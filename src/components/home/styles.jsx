@@ -26,46 +26,46 @@ export const Container = styled.div`
 `;
 
 export const Swapper = styled.div`
-display: flex;
-flex-direction: column;
-
-gap: 50px;
-text-align: center;
-
-h1 {
-  animation: ${blinkAnimation} 1.5s infinite;
-
-  color: #fff;
-  text-transform: uppercase;
-}
-
-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
-  gap: 12px;
+  gap: 50px;
+  text-align: center;
 
-  a {
+  h1 {
+    animation: ${blinkAnimation} 1.5s infinite;
+
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  footer {
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-    width: 32px;
-    height: 32px;
+    align-items: center;
 
-    background: #1d1c1c;
-    border-radius: 100%;
+    gap: 12px;
 
-    transition: all 0.3s;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    &:hover {
-      background: #413f3f;
+      width: 32px;
+      height: 32px;
+
+      background: #1d1c1c;
+      border-radius: 100%;
+
+      transition: all 0.3s;
+
+      &:hover {
+        background: #413f3f;
+      }
     }
   }
-}
 
-@media (max-width: 860px) {
+  @media (max-width: 860px) {
     padding: 0px 12px;
   }
 `;
@@ -80,9 +80,9 @@ export const Main = styled.div`
 export const SliderWrapper = styled.div`
   width: 850px;
   height: 455px;
-  
+
   overflow: hidden;
-  
+
   border-radius: 12px;
 
   @media (max-width: 860px) {
